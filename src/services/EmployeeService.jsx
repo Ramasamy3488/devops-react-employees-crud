@@ -2,7 +2,7 @@ import axios from "axios";
 
 // const API_URL = "http://localhost:8080/api/employees";
 
-const API_URL = `${process.env.REACT_APP_API_URL}/api/employees`;
+const API_URL = `${process.env.REACT_APP_API_URL}/api/v1/employees`;
 
 export const getEmployees = () => axios.get(API_URL);
 export const getEmployeeById = (id) => axios.get(`${API_URL}/${id}`);
